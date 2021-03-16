@@ -1,5 +1,5 @@
-const BigBrainToken = artifacts.require("./contracts/BigBrainToken.sol");
+const BigBrainToken = artifacts.require("./BigBrainToken.sol");
 
 module.exports = function (deployer) {
-  deployer.deploy(BigBrainToken);
+  deployer.deploy(BigBrainToken, 1000000);
 };
