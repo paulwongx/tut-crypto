@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.8.2 <0.9.0;
 
 contract BigBrainToken {
@@ -10,10 +10,11 @@ contract BigBrainToken {
     mapping(address => uint256) public balanceOf;
 
     constructor(uint256 _initialSupply) {
+        balanceOf[msg.sender] = _initialSupply;
         totalSupply = _initialSupply;
+
+        // allocate the initial supply
+
     }
 
-    // Set the total number of tokens
-
-    // Read the total number of tokens
 }
